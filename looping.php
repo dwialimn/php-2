@@ -75,12 +75,9 @@
 				$rest[$x] = $numbers[$x]%5;
 				$x++;
 			}
-			echo "Array sisa baginya adalah: ".$rest[0].
-														", ".$rest[1].
-														", ".$rest[2].
-														", ".$rest[3].
-														", ".$rest[4].
-														", ".$rest[5]; 
+			echo "Array sisa baginya adalah: <pre>";
+			print_r($rest);
+			echo "</pre>"; 
 		// Akhir soal 2
 
 
