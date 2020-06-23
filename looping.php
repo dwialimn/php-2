@@ -54,7 +54,8 @@
 				echo $j." - I Love PHP<br>";
 				$j-=2;
 			}while ($j > 0);
-			
+		// Akhir soal 1
+
 
 		echo "<h3>Soal No 2 Looping Array Modulo </h3>";
 		/* 
@@ -63,27 +64,25 @@
 			Carilah sisa bagi dengan angka 5 dari setiap angka pada array berikut.
 			Tampung ke dalam array baru bernama $rest 
 		*/
-
 		$numbers = [18, 45, 29, 61, 47, 34];
-		echo "array numbers: ";
-		echo "<pre>";
+		echo "array numbers: <pre>";
 		print_r($numbers);
 		echo "</pre>";
-		echo "<br>";
 		// Lakukan Looping di sini
-		$rest=[];
-		$x=0;
-		while ($x < 6) {
-			$rest[$x] = $numbers[$x]%5;
-			$x++;
-		}
-		echo "Array sisa baginya adalah: ".$rest[0].
-													", ".$rest[1].
-													", ".$rest[2].
-													", ".$rest[3].
-													", ".$rest[4].
-													", ".$rest[5]; 
-		echo "<br>";
+			$rest=[];
+			$x=0;
+			while ($x < 6) {
+				$rest[$x] = $numbers[$x]%5;
+				$x++;
+			}
+			echo "Array sisa baginya adalah: ".$rest[0].
+														", ".$rest[1].
+														", ".$rest[2].
+														", ".$rest[3].
+														", ".$rest[4].
+														", ".$rest[5]; 
+		// Akhir soal 2
+
 
 		echo "<h3> Soal No 3 Looping Asociative Array </h3>";
 		/* 
@@ -96,7 +95,6 @@
 			Array ( [id] => 002 [name] => Keyboard MSI [price] => 300000 [description] => Keyboard gaming MSI mekanik [source] => msi.jpeg ) 
 			Array ( [id] => 003 [name] => Mouse Genius [price] => 50000 [description] => Mouse Genius biar lebih pinter [source] => genius.jpeg ) 
 			Array ( [id] => 004 [name] => Mouse Jerry [price] => 30000 [description] => Mouse yang disukai kucing [source] => jerry.jpeg ) 
-
 		*/
 		$items = [
 			['001', 'Keyboard Logitek', 60000, 'Keyboard yang mantap untuk kantoran', 'logitek.jpeg'], 
@@ -104,36 +102,23 @@
 			['003', 'Mouse Genius', 50000, 'Mouse Genius biar lebih pinter', 'genius.jpeg'],
 			['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
 		];
-		
 		// Output: 
 			$assoc = [ 'id', 'name', 'price', 'description', 'source' ];
 			$wadah = [];
-			// $x = 0;
-			// while ($x <= 3) {
-			// 	$y = 0;
-			// 	while ($y <= 4) {
-			// 		$wadah[$assoc[$y]] = $items[$x][$y];
-			// 		$y++;
-			// 	}
-			// 	$x++;
-			// 	echo "<pre>";
-			// 	print_r($wadah);
-			// 	echo "</pre>";
-			// }
-
-			for ($i=0; $i < count($items); $i++) { 
-				for ($j=0; $j < count($items[$i]); $j++) { 
-					$wadah[[$i][$assoc]] = $items[$i][$j];
+			$x = 0;
+			while ($x <= 3) {
+				$y = 0;
+				while ($y <= 4) {
+					$wadah[$assoc[$y]] = $items[$x][$y];
+					$y++;
 				}
+				$x++;
 				echo "<pre>";
 				print_r($wadah);
 				echo "</pre>";
 			}
+		// Akhir soal 3
 
-			// for ($i=0; $i < count($wadah); $i++) { 
-			// 	print_r($wadah[$i]);
-			// 	echo "<br>";
-			// }
 		
 		echo "<h3>Soal No 4 Asterix </h3>";
 		/* 
@@ -147,8 +132,7 @@
 			* * * * 
 			* * * * *
 		*/
-		echo "Asterix: ";
-		echo "<br>";   
+		echo "Asterix: <br>";
 			$str=5;
 			for($a=$str; $a>0; $a--){
 				for ($i=$str; $i>= $a; $i--) { 	

@@ -8,8 +8,7 @@
 </head>
 <body>
 	<h1>Berlatih Function PHP</h1>
-	<?php 
-
+	<?php
 		echo "<h3> Soal No 1 Greetings </h3>";
 		/* 
 			Soal No 1
@@ -19,7 +18,6 @@
 			contoh: greetings("abduh");
 			Output: "Halo Abduh, Selamat Datang di Sanbercode!"
 		*/
-
 		// Code function di sini
 			function greetings($name){
 				echo "Halo $name, Selamat Datang di Sanbercode!";
@@ -42,7 +40,6 @@
 
 			reverseString("abdul");
 			Output: ludba
-			
 		*/
 		// Code function di sini 
 			function reverseString($string){
@@ -55,11 +52,11 @@
 			}
 		// Hapus komentar di bawah ini untuk jalankan Code
 		reverseString("abduh");
-		echo "<br>";
+			echo "<br>";
 		reverseString("Sanbercode");
-		echo "<br>";
+			echo "<br>";
 		reverseString("We Are Sanbers Developers");
-		echo "<br>";
+			echo "<br>";
 		// Akhir soal 2
 
 
